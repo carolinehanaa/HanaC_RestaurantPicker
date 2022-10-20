@@ -4,7 +4,7 @@ string? answer;
 
 
 
-string[] fastfood = { "McDonalds, Chick-Fil-A", "Taco Bell", "Wendy's", "Burger King", "Subway", "Domino's", "Chipotle", "Sonic", "Panera Bread" };
+string[] fastfood = { "McDonalds", "Chick-Fil-A", "Taco Bell", "Wendy's", "Burger King", "Subway", "Domino's", "Chipotle", "Sonic", "Panera Bread" };
 string[] restaurant = { "Olive Garden", "The Cheesecake Factory", "Texas Roadhouse", "P.F. Chang's China Bistro", "Red Lobster", "Outback Steakhouse", "Buffalo Wild Wings", "Red Robin", "Denny's", "Chili's" };
 string[] dessert = { "Baskin-Robbins", "Dairy Queen", "Kona Ice", "Cold Stone Creamery", "Ben & Jerry's", "Rita's Italian Ice", "Menchie's Frozen Yogurt", "The Häagen-Dazs Shoppe", "Crumbl Cookies", "Krispy Kreme" };
 
@@ -41,7 +41,8 @@ while (playAgain == "yes")
         }
         else
         {
-            Console.WriteLine("Invalid Response");
+            Console.WriteLine("Invalid Response.");
+            Console.WriteLine("Please enter FastFood, Restaurant, or Dessert.");
             invalidRes = true;
         }
 
